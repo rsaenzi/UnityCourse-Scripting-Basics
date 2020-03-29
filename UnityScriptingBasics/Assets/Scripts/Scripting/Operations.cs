@@ -35,8 +35,8 @@ public class Operations : MonoBehaviour {
 
 
         // Concatenacion (string)
-        string parteA = "Te Amo ";
-        string parteB = "Catalina";
+        string parteA = "Hola!";
+        string parteB = "como estas?";
 
         string mensaje = parteA + parteB;
         print(mensaje);
@@ -73,12 +73,5 @@ public class Operations : MonoBehaviour {
         Vector3 posicionPersonaje = new Vector3(120, 0, 0);
 
         bool pasoLineaDeMeta1 = posicionPersonaje.x >= 100;
-
-        // Las operaciones se pueden hacer en una funcion aparte
-        bool pasoLineaDeMeta2 = verificarSiPasoLineaDeMeta(posicionPersonaje);
-    }
-
-    bool verificarSiPasoLineaDeMeta(Vector3 position) {
-        return position.x >= 100;
     }
 }

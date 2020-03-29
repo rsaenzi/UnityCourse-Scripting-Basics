@@ -10,18 +10,21 @@ public class Conditionals : MonoBehaviour {
         // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/selection-statements
 
 
-        // Instruccion 1
-
-        // Condicional IF
+        // - Condicional IF:
         bool entrada = false;
+
+        // Instrucción A
+        // Instrucción B
 
         // El procesador ejecuta las instrucciones dentro
         // del cuerpo del IF, si la instruccion dentro del 
         // parentesis es true
-        if(entrada == true) {
+        if (entrada == true) {
             print("Pude entrar");
         }
-        // Instruccion 5
+
+        // Instruccion C
+        // Instrucción D
 
 
 
@@ -39,8 +42,12 @@ public class Conditionals : MonoBehaviour {
 
 
 
-        // Condicional IF ELSE
+        // - Condicional IF ELSE:
         // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/if-else
+
+        // Instrucción A
+        // Instrucción B
+
         bool tengoTicketVIP = true;
 
         if(tengoTicketVIP == true) {
@@ -49,11 +56,13 @@ public class Conditionals : MonoBehaviour {
         } else {
             print("Soy pobre... Nooo!!!");
         }
-        // Instruccion 6
+
+        // Instruccion C
+        // Instrucción D
 
 
 
-        // Condicional SWITCH
+        // - Condicional SWITCH
         // https://msdn.microsoft.com/en-us/library/06tc147t(v=vs.120).aspx
         int distancia = 50;
 

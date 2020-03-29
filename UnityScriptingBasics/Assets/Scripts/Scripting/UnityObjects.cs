@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditorInternal;
 
+// Member hides inherited member
+#pragma warning disable 0108
+
 public class UnityObjects : MonoBehaviour {
 
     // Operador this

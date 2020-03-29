@@ -2,49 +2,58 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// private field assigned but not used.
+#pragma warning disable 0414
+#pragma warning disable 0219
+
 public class Functions : MonoBehaviour {
 
-    // Esto es una funcion, invocada por Unity
-    void Start() {
-        // Instruction 1
-        // Instruction 2
-        // Instruction 3
-    }
+    // - Funciones:
+    // Agrupacion de instrucciones, a la cual se le asigna un nombre
 
-    // Tambien es invocada por Unity
-    // El signature o firma de esta funcion es void Update()
     void Update() {
-        // Instruction X
-        // Instruction Y
-        // Instruction Z
+        // Instrucción X
+        // Instrucción Y
+        // Instrucción Z
+    }
+
+    void Start() {
+        // Instrucción 1
+        // Instrucción 2
+        // Instrucción 3
+        // Instrucción 4
+    }
+
+    void CalculoPuntaje() {
+        // Instrucción A
+        // Instrucción B
     }
 
 
 
+    // - Alcance de Variables:
+    // Las variables creadas por fuera de las funciones son visibles
+    // para todas las funciones
 
-    // Esta es una funcion creada por mi, por lo tanto,
-    // No es invocada o ejecutada por Unity, necesita ser 
-    // invocada manualmente desde
-    void MyFunction() {
-        // Instruction A
-        // Instruction B
-        // Instruction C
+    int puntaje = 500;
+
+    void FuncionA() {
+
+        // Tan pronto como la funcion acabe su ejecucion,
+        // la variable es eliminada de la memoria RAM
+        int vidas = 10;
     }
 
-    // Awake es invocada por Unity
-    void Awake() {
-
-        // Instruction 1
-
-        // Aqui estamos llamando la funcion void MyFunction()
-        MyFunction();
-
-        // Instruction 3
+    void FuncionB() {
+        // puntaje = 800;
+        // vidas = 20;
     }
 
 
 
-
+    // - Orden de Ejecucion:
+    // Su ejecucion no sigue el mismo orden que las instrucciones
+    // sino que depende del Orden de Ejecucion de Funciones de Unity
 
 
 
@@ -87,13 +96,6 @@ public class Functions : MonoBehaviour {
     }
 
 
-
-
-
-
-
-
-
     // Como invoco o ejecuto estas funciones?
     void OnEnable() {
 
@@ -114,19 +116,5 @@ public class Functions : MonoBehaviour {
 
         float distanciaEntreEllos = CalculoDeDistancia(posicionPersonaje, posicionEnemigo);
         print(distanciaEntreEllos);
-    }
-
-
-
-
-    void ScopeDeVariables() {
-
-        // Estas variables declaradas dentro 
-        // de una funcion no tienen la palabra public
-        string saludo = "Hola :)";
-        bool puertaAbierta = false;
-
-        // Tan pronto como la funcion acabe su ejecucion,
-        // la variable es eliminada de la memoria RAM
     }
 }

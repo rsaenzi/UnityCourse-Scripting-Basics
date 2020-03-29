@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Member hides inherited member
+#pragma warning disable 0108
+
 public class Objects : MonoBehaviour {
 
     // El tipo de una variable u objeto, tambien se conoce como Class o Clase
